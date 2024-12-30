@@ -1,0 +1,215 @@
+body{
+    background-color: lightgray;
+}
+footer h2{
+    color: rgb(207, 0, 0);
+    text-align: center;
+}
+footer h1{
+    color: rgb(207, 0, 0);
+    text-align: right;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px;
+}
+.menu h3 a{
+    color: red;
+    text-decoration: none;
+}
+.menu input{
+    border: 1px solid black;
+    border-radius: 20px;
+    height: 40px;
+}
+.lat h2{
+    margin-left: 295px;
+}
+.lat h2 button{
+    position: absolute;
+    right: 30px;
+}
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+h3 {
+    background-color: rgb(46, 46, 46);
+    border: 2px solid black;
+    border-radius: 20px;
+    font-weight: bold;
+    color: red;
+    margin: 10px;
+    padding: 10px;
+}
+.column {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.image {
+    display: flex;
+    flex-wrap: wrap;
+}
+.column{
+    margin-left: 280px;
+}
+.thumbnail-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.thumbnail-container img {
+    border-radius: 6px;
+    border: 1px solid black;
+    width: 320px;
+    height: 180px;
+    margin-left: 15px;
+}
+.thumbnail-container video{
+    margin-left: 15px;
+}
+
+.thumbnail-container h4 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 10px;
+}
+li{
+    list-style-type: none;
+    padding: 0;
+}
+.container{
+    height: 100%;
+    position: relative;
+}
+.container div{
+    display: flex;
+    height: 60px;
+    background: rgba(0,0,0,0.2);
+    border-radius: 2%;
+}
+.container div label{
+    font-size: 2.3em;
+    height: 100%;
+    width: 60px;
+    line-height: 60px;
+    text-align: center;
+    cursor: pointer;
+    transition: .5s ease;
+}
+.container div label:hover{
+    color: #fff;
+    background: #000;
+}
+input[type=checkbox]{
+    display: none;
+}
+.container nav{
+    position: absolute;
+    top: 60px;
+    bottom: 0;
+    width: 0;
+    background: rgba(0,0,0,1);
+    box-shadow: 2px 5px 5px #000;
+    overflow: hidden;
+    transition: 1.5s ease;
+}
+.container nav ul{
+    border-right: 5px solid rgb(184, 0, 0);
+}
+.container nav ul li a{
+    background-color: rgb(173, 157, 157);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    font-size: 1.2em;
+    font-family: arial;
+    color: #000;
+    text-decoration: none;
+    text-transform: capitalize;
+    padding: 10px 30px;
+    height: 50px;
+    transition: 1s ease;
+}
+.container nav ul li a:hover{
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    border-right: 50px solid rgb(224, 0, 0);
+}
+.container nav ul{
+    margin-left: 0;
+    padding: 5px;
+}
+input[type=checkbox]:checked ~ nav{
+    width: 250px;
+    overflow: visible;
+}
+.Shorts{
+    padding:15px 15px 15px 0px;
+    background-color: rgb(170, 170, 170);
+    border-radius: 15%;
+}
+.short .image2{
+    display: flex;
+}
+.short img{
+    border: 1px solid black;
+    border-radius: 6px;
+    width: 200px;
+    height: auto;
+}
+.short .thumbnail-container2{
+    width: 200px;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-left: 20px;
+}
+.short h4{
+    text-align: center;
+}
+.image2{
+    position: relative;
+    border-bottom: 1px solid black;
+}
+.hidden{
+    position: absolute;
+    right: 0px;
+    top: 150px;
+    right: 50px;
+    justify-content: center;
+    opacity: 0;
+    transition: 1s ease;
+    width: 65px;
+    height: 65px;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20%;
+    border-color: red;
+}
+.hidden:hover{
+    border: 1px solid black;
+    background-color: rgb(255, 78, 78);
+    color: white;
+    cursor: grab;
+}
+#animate-out {
+    transition: transform 0.3s ease-out, opacity 1s ease-out;
+    transform: translateX(-150%);
+    opacity: 0;
+}
+#animate-in{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+#animate-in_second{
+    opacity: 1;
+    transition: opacity 0.4s ease-in-out;
+} 
